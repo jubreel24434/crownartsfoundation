@@ -858,3 +858,17 @@ html {
     height: 250px;
   }
 }
+
+/* Make hero text and buttons clickable above overlay */
+.hero-video-text {
+  position: relative;
+  z-index: 10;
+}
+
+.hero-video-section, .hero-overlay, .hero-video {
+  pointer-events: none;
+}
+
+.hero-video-text * {
+  pointer-events: auto;
+}
