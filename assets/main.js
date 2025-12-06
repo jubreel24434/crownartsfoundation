@@ -104,11 +104,52 @@ if(fullGallery){
 
 const eventsUpcoming = [
   {
+    title: "Eve’s Rapture",
+    date: "Dec 12–14, 2025 • 5:00 PM daily",
+    location: "Glover Memorial Hall, Customs Street, Lagos Island",
+    image: "assets/images/eves-rapture.jpeg",
+    description: "A tale of love, temptation and divine awakening. A theatrical revelation performed by Crown Troupe of Africa and directed by Segun Adefila. (Rated 18+)"
+  },  
+
+  // NEW EVENT BELOW
+
+    {
+    title: "Eve’s Rapture",
+    date: "Dec 12–14, 2025 • 5:00 PM daily",
+    location: "Glover Memorial Hall, Customs Street, Lagos Island",
+    image: "assets/images/eves-rapture.jpeg",
+    description: "A tale of love, temptation and divine awakening. A theatrical revelation performed by Crown Troupe of Africa and directed by Segun Adefila. (Rated 18+)"
+  },
+  {
+    title: "Eve’s Rapture",
+    date: "Dec 12–14, 2025 • 5:00 PM daily",
+    location: "Glover Memorial Hall, Customs Street, Lagos Island",
+    image: "assets/images/eves-rapture.jpeg",
+    description: "A tale of love, temptation and divine awakening. A theatrical revelation performed by Crown Troupe of Africa and directed by Segun Adefila. (Rated 18+)"
+  }
+];
+
+const eventsPast = [
+  {
     title: "Theatre Residency Workshop",
     date: "Feb 12, 2025",
     location: "Bariga, Lagos",
     image: "assets/images/gallery3.jpg",
     description: "A 5-day intensive residency for young performers, focusing on movement, discipline, stage expression, and ensemble practice."
+  },
+  {
+    title: "Arugba Live Performance Tribute",
+    date: "Dec 2024",
+    location: "Ikeja, Lagos",
+    image: "assets/images/gallery14.jpg",
+    description: "A performance tribute featuring key scenes and reinterpretations from the iconic film *Arugba*."
+  },
+  {
+    title: "Crown Troupe 27th Anniversary",
+    date: "Oct 2024",
+    location: "Bariga, Lagos",
+    image: "assets/images/gallery6.jpg",
+    description: "Celebrating the legacy and ongoing impact of one of Nigeria’s most influential theatre movements."
   },
   {
     title: "Crown Arts Street Theatre Parade",
@@ -126,24 +167,7 @@ const eventsUpcoming = [
   }
 ];
 
-const eventsPast = [
-  {
-    title: "Arugba Live Performance Tribute",
-    date: "Dec 2024",
-    location: "Ikeja, Lagos",
-    image: "assets/images/gallery14.jpg",
-    description: "A performance tribute featuring key scenes and reinterpretations from the iconic film *Arugba*."
-  },
-  {
-    title: "Crown Troupe 27th Anniversary",
-    date: "Oct 2024",
-    location: "Bariga, Lagos",
-    image: "assets/images/gallery6.jpg",
-    description: "Celebrating the legacy and ongoing impact of one of Nigeria’s most influential theatre movements."
-  }
-];
-
-// RENDER EVENTS ON events.html
+      // RENDER EVENTS ON events.html
 if (window.location.pathname.endsWith("events.html")) {
 
   const upEv = document.getElementById("upcoming-events");
@@ -338,3 +362,4 @@ function stripHtml(html){
   if(!html) return "";
   return html.replace(/<[^>]*>/g, '').slice(0,180) + (html.length>180? "..." : "");
 }
+
