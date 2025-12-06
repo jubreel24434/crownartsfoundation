@@ -912,4 +912,12 @@ html {
 .hero-video-text * {
   pointer-events: auto;
 }
+.arm-logo{
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  display:block;
+  margin: 0 auto 14px auto;
+}
+
 
